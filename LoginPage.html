@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="sccs/main.css">
+<link rel="stylesheet" type="text/css" href="sccs/normalize.css" >
+<link rel="stylesheet" type="text/css" href="scss/style_index.css">	
+</head>
+<body>
+       
+	
+	
+<main>
+    <img src="img/DSlogo.svg" alt="Data sciences logo" class="image">
+	
+	<h1>App Name</h1> 
+    
+    <form>
+       <p>Email Address:</p>
+        <input type="email" required name="emailaddress" placeholder="Your username....">   
+        <p class="rectangle">gergr</p>
+       
+        <p>Password:</p>
+        <input type="password" required name="password" placeholder="Your password...." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters">
+        <p class="rectangle">grsht</p>
+         
+        <button class="login-Btn" onclick="check(this.form)" value="Login">Login</button>
+    </form>
+
+    <a class="loginmessage" href="mailto:mibon@publicismedia.com">Trouble singning in?</a>
+
+    <script>
+            function check(form)/*function to check userid & password*/
+            {
+             /*the following code checkes whether the entered userid and password are matching*/
+             if(form.emailaddress.value == "mibon@publicismedia.com" && form.password.value == "Passw0rd#1")
+              {
+               /* window.open('LandingPage.html')/*opens the target page while Id & password matches*/
+                window.open('StyleguidePage.html')/*opens the target page while Id & password matches*/
+              }
+           
+             else
+             {
+               alert("Error Password or Username")/*displays error message*/
+              }
+            }
+            </script>
+
+</main>
+
+	
+	
+<footer>
+    <p>&copy; Copyright 2018</p>
+</footer>
+
+
+</body>
+
+</html>

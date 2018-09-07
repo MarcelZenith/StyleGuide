@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>UI Style Guide</title>
+        <link  rel="stylesheet" type="text/css" href="sccs/main.css"/>
+        <link rel="stylesheet" type="text/css" href="sccs/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="scss/style_index.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/myscript.js"></script>
+
+
+    </head>
+
+	<!--HTML Body -->
+    <body>
+        <!--HTML Header -->
+        <header class="header">
+            <div class="dropdown userDrop fas fa-user post">  TSmith  <i class="down"></i>
+                    <!-- <button class="dropbtn"></button>-->
+                     <div class="dropdown-content">
+                       <a href="LoginPage.html">Logout</a>
+                       <a href="#">Account</a>
+                     </div>
+             </div>
+             <div class="nav" onclick="myFunction()" >
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                         <!-- function for onclick event for the moment it will display Hello world--> 
+                    <p id="demo"></p>                            
+                   <div class="menuDrop hide">Menu</div>
+              </div>
+              <!-- <img src="img/DSlogo.SVG" alt="Logo" class="logo"/> -->
+              <a href="StyleguidePage.html"> <img src="img/DSlogo.SVG" alt="Logo" class="logo"></a>
+           
+			  <!--Icons for the top page -->     
+			  <h1 class="Headerfile1"> UIStyleGuides</h1>
+			 
+        </header>
+
+
+		<!--HTML Main start here -->
+		<main>
+
+			<section class="landingPageWrap">
+
+                    <h3 class="mydiv2 arrow">Sort by: 
+                            <div class="dropdown">
+                                <button class="dropbtn">Last updated  <i class="down"></i></button>
+                                <div class="dropdown-content">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                            </h3>
+				<h2></h2>
+				<!--<a href="StyleguidePage.html">-->
+					<article id="Optimum1">
+						<h4 class="title">Optimum</h4>
+						<p class="version">Version:<span> Dark Theme</span></p>
+						<p class="Updated">Updated: 2018-01-01</p>
+					</article> 
+				<!--</a>-->
+
+				<!--<a href="StyleguidePage.html">-->
+					<article id="Optimum2">
+						 <h4 class="title">Optimum</h4>
+						 <p class="version">Version:<span> Light Theme</span></p>
+						 <p class="Updated">Updated: 2018-01-01</p>
+					 </article> 
+				<!--</a>-->
+
+				<!--<a href="StyleguidePage.html">-->
+					<article id="Optimum3">
+						 <h4 class="title">Optimum</h4>
+						 <p class="version">Version:<span> Default 2018</span></p>
+						 <p class="Updated">Updated: 2018-01-01</p>
+					 </article> 
+				  <!--</a>-->
+
+				<!--<a href="StyleguidePage.html">-->
+					<article id="Optimum4">
+						 <h4 class="title">Optimum</h4>
+						 <p class="version">Version:<span> Publicis Media Theme</span></p>
+						 <p class="Updated">Updated: 2018-01-01</p>
+					 </article> 
+			 <!--</a>-->
+
+        </section>
+        
+        <section class="stylesWrap hidden">
+
+               <!-- <h2>Meteor<span> Styleguide</span></h2>-->
+                <h1 id="text1">Meteor Styleguide </h1>
+			
+        
+                <select id="styles">
+                        <option value="None">Show Styles</option>
+                        <option value="primarycolors">primarycolors</option>
+                        <option value="fonts">fonts</option>
+                        <option value="backgrounds">backgrounds</option>
+                        <option value="MenuNavigation">MenuNavigation</option>
+                     </select>
+<!--closing x sign-->
+                <article class="fullWidthWrap" id="primarycolors">
+                                <div id="btn" >
+                                <div class="btn1">
+                                <div class="md"> 
+                                </div>
+                                </div> 
+                                </div>
+
+                                <div>
+                   <h3>Primary Color</h3></div>
+
+  <!--  <div class="colorSample colorSampleBox"></div>-->
+                    
+                      <div class="itemgGroup" id="color1">
+                        <div class="title"></div>
+                         <div id="titletext"></div>
+                      </div>
+                    
+                 </article> 
+        
+                 <article class="halfWidthWrap" id="fonts">
+                        <div id="btn2" >
+                                <div class="btn1">
+                                <div class="md">
+                                </div>
+                                </div>
+                              </div>
+
+     <!-- Font box ***********************************************************-->                           
+                   <div><h3>Font</h3></div>                          
+                                <div class="itemgGroup">
+                                  <div class="title"></div>
+                                  <div id="fontbox"></div>  
+                                  </div>    
+                              </article> 
+    
+                 <article class="halfWidthWrap" id="backgrounds">
+                        <div id="btn3" >
+                                <div class="btn1">
+                                <div class="md">
+                                </div>
+                                </div>
+                            </div>
+
+ <!-- Background box ***********************************************************--> 
+                   <div><h3>Backgrounds</h3></div>
+                      
+                  
+                            <div class="itemgGroup">
+                              <div class="title"></div> 
+                              <div id="backgroundbox"></div>
+                              </div>      
+                              </article>
+                
+                              
+
+                  <article class="fullWidthWrap" id="Logosfonts">
+                        <div id="btn4" >
+                                <div class="btn1">
+                                <div class="md">
+                                </div>
+                                </div>
+                                </div>
+
+              <!--  Images block**********************************************************-->                  
+                       <div><h3>Logos & Icons</h3></div>
+  
+                        
+        <div class="itemgGroup">
+        <div class="title"></div>
+        <div id="logbox"></div>
+                       </div> 
+
+                </article>
+    
+                <article class="fullWidthWrap" id="MenuNavigation">
+    
+                        <div id="btn5" >
+                                <div class="btn1">
+                                <div class="md">
+                                </div>
+                                </div>
+                            </div>
+    
+                        <div><h3>Menus & Navigation</h3></div>
+             <div class="MenuNav" id="NavText">
+                    <p>This is a paragraph. It's a very simple structure that you will use
+                            time and again in your web pages.</p>
+                         <p>This is another paragraph. What could be simpler to create?</p>
+             </div>
+    
+                </article>
+        </section>
+ 	</main>
+   
+<!--JSon data to load the frontend elements-->
+
+<script src="js/styleguide.js"></script>
+  
+
+
+
+	<!--HTML footer -->    
+	<footer>
+		<p> &copy; Copyright</p>
+	</footer>	
+ </body>
+</html>
+

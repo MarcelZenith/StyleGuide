@@ -1,0 +1,736 @@
+@charset "UTF-8";
+//colors
+$white: white;
+$red: red;
+$silver:  silver;
+$black: black;
+$color_pink_swan_approx: #bbb;
+$color_gallery_approx: #f0f0f0;
+$color_japanese_laurel_approx: green;
+$seashell: #f1f1f1;
+$black_20: rgba(0,0,0,0.2);
+$color_alto_approx: #ddd;
+$color_goblin_approx: #3e8e41;
+$color_coral_red_approx: #ff4444;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+//fonts
+$font_0: interstatebold;
+$font_1: interstateregular;
+$font_2: Open Sans,Gotham,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+/*
+$font_0: Arial;
+$font_1: Helvetica;
+$font_2: sans-serif;
+*/
+/*
+$font_3: Helvetica Neue;
+$font_4: Helvetica;
+$font_5: Arial;
+$font_6: sans-serif;
+$font_7: Open Sans;
+*/
+
+//urls
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+
+$url_0: url(interstate-bold-webfont.woff2);
+$url_1: url(interstate-bold-webfont.woff);
+$url_2: url(interstate-regular-webfont.woff2);
+$url_3: url(interstate-regular-webfont.woff);
+
+@font-face {
+	font-family: $font_0;
+	src: $url_0 format("woff2"), $url_1 format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: $font_1;
+	src: $url_2 format("woff2"), $url_3 format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+}
+body {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: $color_gallery_approx;
+	font-family:$font_2;
+	height: 100%;
+}
+main {
+	padding: 0;
+    margin: 0;
+	margin-top: 3.125rem;
+    width: 100%;
+	display: inline-block;
+}
+h1 {
+	text-align: center;
+	color: $red;
+	margin-bottom: 30px;
+	font-family: $font_1;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+h2 {
+	padding: 1rem;
+}
+.Headerfile1{
+	text-align: left;
+	color:black;
+	padding: 10px 30px;
+	font-weight: normal;
+}
+
+form {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2.5rem;
+	input {
+		width: 100%;
+		height: 100;
+		border: 0.1rem solid $silver;
+		padding: 0.6rem;
+	}
+	input:invalid {
+		border-color: red;
+	  }
+	
+
+	.login-Btn {
+		padding: 0.3rem;
+		width: 100%;
+		background-color: White;
+		color: $black;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 1.5rem;
+		border: 0.1rem solid $silver;
+		font-size: 1.8rem;
+		margin: 0 auto;
+	}
+}
+
+.rectangle {
+	color: $red;
+	margin-bottom: 0.625rem;
+	padding: 0.125rem 0.625rem 0.625rem;
+	visibility: hidden;
+}
+.image {
+	width: 10rem;
+	display: block;
+	margin: 2rem auto 0 auto;
+}
+
+.loginmessage{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 0.625rem;
+}
+/*the second file properties */
+
+
+
+header {
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	margin-top: 0.3125rem;
+	padding: 0.3125rem;
+}
+
+.hidden{
+	display: none;
+}
+
+
+article {
+	padding: 0;
+	margin: 0.625rem 1%;
+	background-color: $white;
+	padding: 0.625rem 0.9375rem;
+	height: 15rem;
+	width: 100%;
+	float: left;
+	border: thin solid green;
+	border-top: medium solid green;
+}
+ 
+img {
+	padding: 0;
+	margin: 0;
+	
+}
+
+.logo {
+	width: 12rem;
+	display: block;
+	margin-bottom: 0.3125rem;
+	padding: 0.625rem 0;
+}
+
+.dot {
+	height: 1.5625rem;
+	width: 1.5625rem;
+	background-color: $color_pink_swan_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	display: inline-block;
+	padding: 0.03125rem 0.0625rem;
+	position: relative;
+	margin-left: 0.3125rem;
+	margin-right: 0.3125rem;
+}
+.nav {
+	padding: 0.625rem 1.875rem;
+	display: none;
+	position: absolute;
+	right: 0;
+}
+
+.mydiv {
+	font-weight: normal;
+	margin-top: 2%;
+	text-align: center;
+	span {
+		font-weight: bold;
+		margin-top: 2%;
+		text-align: center;
+	}
+}
+#Updated {
+	text-align: center;
+	font-weight: normal;
+	margin-top: 1%;
+	padding: 1.875rem;
+}
+
+
+.version {
+	font-weight: normal;
+	text-align: center;
+	padding: 0.625rem;
+	span {
+		font-weight: bold;
+		text-align: right;
+		padding: 0.625rem;
+	}
+}
+.mydiv2 {
+	font-weight: normal;
+	text-align: right;
+	padding: 0.625rem;
+	span {
+		font-weight: bold;
+		text-align: right;
+		padding: 0.625rem;
+	}
+}
+.arrow {
+	position: relative;
+}
+i {
+	border: solid $black;
+	border-width: 0 0.1875rem 0.1875rem 0;
+	display: inline-block;
+	padding: 0.1875rem;
+}
+.down {
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: rotate(45deg);
+}
+
+#styles {
+	background-color: $color_gallery_approx;
+	color: $black;
+	padding: 1.875rem;
+	font-size: 1rem;
+	border: none;
+	margin-left: 0.0625rem;
+	font-weight: bold;
+}
+
+.dropbtn {
+	background-color: $color_gallery_approx;
+	color: $black;
+	padding: 1.875rem;
+	font-size: 1rem;
+	border: none;
+	margin-left: 0.0625rem;
+	font-weight: bold;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	&:hover {
+		.dropdown-content {
+			display: block;
+		}
+		.dropbtn {
+			background-color: $color_goblin_approx;
+		}
+	}
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: $seashell;
+	min-width: 10.75rem;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0.5rem 1rem 0 $black_20;
+	z-index: 1;
+	a {
+		color: $black;
+		padding: 0.75rem 1rem;
+		text-decoration: none;
+		display: block;
+		&:hover {
+			background-color: $color_alto_approx;
+		}
+	}
+}
+.userDrop {
+	position: absolute;
+	display: inline-block;
+	right: 1.25rem;
+}
+.menuDrop {
+	width: 12.5rem;
+	height: 12.5rem;
+	display: inline-block;
+	position: absolute;
+	background: $color_coral_red_approx;
+	z-index: 2;
+}
+.hide {
+	display: none;
+}
+
+/* Second file properties end */
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 1rem;
+	p {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+a article{
+	color: $black;
+	display: block;
+	&:hover {
+		background-color: $color_alto_approx;
+	}
+}
+
+/* third file properties start */
+.styleWrap {
+	padding: 0;
+	margin: 0;
+	width: 98%;
+	margin-top: 0.3125rem;
+	padding: 0.3125rem;
+}
+
+.fullWidthWrap {
+    padding: 0;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+    background-color: white;
+    padding: 0.625rem 0.9375rem;
+    height: 23.75rem;
+    width: 97%;
+    float: left;
+    border: thin solid green;
+    border-top: medium solid green;
+}
+.halfWidthWrap {
+    padding: 0;
+	margin-left: 10px;
+	margin-right: 20px;
+    background-color: white;
+    padding: 0.625rem 0.9375rem;
+    height: 23.75rem;
+    width: 48%;
+    float: left;
+    border: thin solid green;
+    border-top: medium solid green;
+}
+
+#fonts{
+	margin: 10px;
+}
+#background{
+	//margin: 30px;
+	margin-right: 15px;
+	padding: 10px;
+}
+
+//**************************Closing button creation*************************
+#btn
+{
+width:1.5625rem;
+height:1.5625rem;
+float: right;
+background-color:white;
+
+}
+
+
+
+#btn2
+{
+width:1.5625rem;
+height:1.5625rem;
+float: right;
+background-color:white;
+
+}
+
+#btn3
+{
+width:1.5625rem;
+height:1.5625rem;
+float: right;
+background-color:white;
+
+}
+
+#btn4
+{
+width:1.5625rem;
+height:1.5625rem;
+float: right;
+background-color:white;
+
+}
+
+#btn5
+{
+width:1.5625rem;
+height:1.5625rem;
+float: right;
+background-color:white;
+
+}
+
+.btn1
+{
+height:1.5625rem;
+width:0.125rem;
+float: right;
+margin-left:0.75rem;
+background-color:black;
+transform: rotate(45deg);
+-ms-transform: rotate(45deg); 
+-webkit-transform: rotate(45deg); 
+z-index:1;
+
+}
+
+.md
+{
+height:1.5625rem;
+width:0.125rem;
+float: right;
+background-color:black;
+transform: rotate(90deg);
+-ms-transform: rotate(90deg); 
+-webkit-transform: rotate(90deg); 
+z-index:1;
+
+}
+
+.itemgGroup{
+	width:100%;
+	float:left;
+	
+	
+
+	.colorSample{
+		width: 1.875rem;
+		height: 1.875rem;
+		border-radius: 16px;
+		vertical-align: bottom;
+		float: left;
+		padding: 5px;	
+	}
+
+	
+
+#titletext{
+width:100%;
+float: left;
+padding: 20px;
+margin: 0px 0px 15px 15px;
+height: 50%;
+
+}
+
+#fontbox{
+	width:100%;
+	float: left;
+	padding: 20px;
+	margin: 0px 0px 15px 15px;
+	height: 50%;	
+}
+
+
+.fontext{
+	width: 1.875rem;
+	height: 1.875rem;
+	border-radius: 16px;
+	vertical-align: bottom;
+	float: left;
+	padding: 5px;	
+}
+
+.logbox{
+	width:100%;
+	float: left;
+	padding: 20px;
+	margin: 0px 0px 15px 15px;
+	height: 50%;
+}
+.LogoSample{
+	width:100%;
+	float: left;
+	margin:5px;
+    	
+}
+.SampleBox{
+	margin: 2.5rem;
+
+}
+.wrapper{
+	width:50%;
+	float: left;
+	padding: 20px;	
+}
+.bgbox{
+	margin: 2.5rem;
+	padding: 2.5rem;
+}
+	
+	.title{
+		display: inline-block;
+		color: $black;
+	
+	}
+	.description{
+		display: inline-block;
+		
+	}
+	  #color1{
+		  width: 50%;
+		  float: left;
+	  }
+
+
+}
+
+.bgcolor{
+	width: 1.875rem;
+	height: 1.875rem;
+/*	background-color:gray;*/
+	display: inline-block;
+//	border-radius: 16px;
+	vertical-align: bottom;
+
+}
+
+
+
+	.title{
+		display: inline-block;
+		color: $black;
+		
+	}
+	.description{
+		display: inline-block;
+		
+	}
+	#color1 .colorSample{
+		background:red;
+	}
+	#color2 .colorSample{
+		background: green;
+	}
+	#color3 .colorSample{
+		background:blue;
+	}
+
+
+.itemgGroup2{
+	width:50%;
+	/*float:left;*/
+	line-height: 1rem;
+	padding: 2rem;
+	margin: 2rem;
+
+	.colorSample2{
+		width: 1.875rem;
+		height: 1.875rem;
+	background-color:gray;
+		display: inline-block;
+		border-radius: 16px;
+		vertical-align: bottom;
+	}
+	.title{
+		display: inline-block;
+		color: $black;
+		
+	}
+	.description{
+		display: inline-block;
+		
+	}
+	#color1 .colorSample{
+		background:red;
+	}
+	#color2 .colorSample{
+		background: green;
+	}
+	#color3 .colorSample{
+		background:blue;
+	}
+}
+ .LogoIcon{
+	float:left;
+ }
+.Logoname{
+	float:right;
+}
+
+.itemgGroup3{
+	width:50%;
+	float:left;
+	line-height: 2rem;
+	padding: 2rem;
+	.LogoIcon{
+		display: inline-block;
+
+	}
+	
+	.title{
+		display: inline-block;
+		color: $black;
+		width: 40%;
+	}
+	.description{
+		display: inline-block;
+		
+	}
+}
+ 
+.MenuNav{
+	margin: 0.625rem
+}
+
+
+
+.stylesWrap {
+	
+ 
+  .fullWidthWrap:nth-child(1) {
+    border: thin solid red;
+	border-top: medium solid red;
+}
+
+
+.halfWidthWrap:nth-child(1) {
+	border: thin solid yellow;
+	border-top: medium solid yellow;
+}
+.halfWidthWrap:nth-child(2) {
+	border: thin solid yellow;
+	border-top: medium solid yellow;
+}
+
+
+.fullWidthWrap:nth-child(2) {
+    border: thin solid red;
+	border-top: medium solid red;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.landingPageWrap a article{
+		width: 48%;
+	}
+
+	.landingPageWrap article{
+		width: 48%;
+	}
+
+	
+	.nav {
+		display: none;
+	}
+	.userDrop {
+		display: inline-block;
+	}
+	
+}
+@media only screen and(min-width: 1024px) {
+	form {
+		width: 40%;
+		background: $white;
+		margin: 0 auto;
+	}
+	.landingPageWrap a article{
+		width: 23%;
+	}
+	.landingPageWrap article{
+		width: 23%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.itemgGroup{
+		float: none;
+			
+	}
+	.itemgGroup3{
+		float: none;
+			
+	}
+}
+@media only screen and (max-width: 1200px) {
+    #fonts,#backgrounds{
+        width: 97%;
+        position: initial;
+        top: default;
+    }
+}

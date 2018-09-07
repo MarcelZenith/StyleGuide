@@ -1,0 +1,163 @@
+  var titletext = [
+  {
+      "Client": "Optimum1",
+      "name":"Black",
+      "colorSampleBox": "Black",
+      "Font": "sans-serif",
+      "Background": "white",
+      "Logo": "img/DSlogo.SVG"
+     
+    },
+    
+     {
+      "Client": "Optimum2",
+      "name":"silver",
+      "colorSampleBox": "silver",
+      "Font": "interstatebold",
+      "Background": "green",
+      "Logo": "img/DSlogo.SVG"
+    }, 
+  
+    {
+      "Client": "Optimum3",
+      "name":"red",
+      "colorSampleBox": "red",
+      "Font": "interstateregular",
+      "Background": "grey",
+      "Logo": "img/DSlogo.SVG"
+    }, 
+  
+    {
+      "Client": "Optimum4",
+      "name":"green",
+      "colorSampleBox": "green",
+      "Font": "Open Sans",
+      "Background": "orange",
+      "Logo": "img/DSlogo.SVG"
+    },
+    {
+      "Client": "Optimum5",
+      "name":"yellow",
+      "colorSampleBox": "yellow",
+      "Font": "interstateregular",
+      "Background": "grey",
+      "Logo": "img/DSlogo.SVG"
+    }]
+  ;
+  
+
+
+
+  var fontbox = [
+  {
+      "Client": "Optimum1",
+     
+      "Font": "sans-serif",
+     
+     
+    },
+    
+     {
+      "Client": "Optimum2",
+      
+      "Font": "interstatebold"
+     
+    }, 
+  
+    {
+      "Client": "Optimum3",
+     
+      "Font": "interstateregular"
+      
+    }, 
+  
+    {
+      "Client": "Optimum4",
+      
+      "Font": "Open Sans"
+      
+    },
+    {
+        "Client": "Optimum5",
+      "Font": "interstateregular"
+      
+    }]
+  ;
+  
+
+//Object 
+
+ var NavText = [
+  {
+      "Client": "Optimum1",
+     
+      "Text": "This is a paragraph. It's a very simple structure that you will use time and again in your web pages"
+     
+     
+    }]
+  ;
+  
+
+
+
+  
+  var backgroundbox = [
+  {
+      "Client": "Optimum1",
+      "name":"Black",
+      "colorSampleBox": "Black",
+      "Font": "sans-serif",
+      "Background": "white",
+      "Logo": "img/DSlogo.SVG"
+     
+    },
+    
+     {
+      "Client": "Optimum2",
+      "name":"silver",
+      "colorSampleBox": "silver",
+      "Font": "interstatebold",
+      "Background": "green",
+      "Logo": "img/DSlogo.SVG"
+    }, 
+  
+    {
+      "Client": "Optimum3",
+      "name":"yellow",
+      "colorSampleBox": "yellow",
+      "Font": "interstateregular",
+      "Background": "grey",
+      "Logo": "img/DSlogo.SVG"
+    }]
+  ;
+  
+ 
+
+
+    var logbox = [
+  {
+      "Client": "Optimum1",
+      "name":"Image 1",
+      "Logo": "img/DSlogo.SVG"
+     
+    },
+    
+     {
+      "Client": "Optimum2",
+      "name":"Image 2",
+      "Logo": "img/DSlogo.SVG"
+    }, 
+    {
+      "Client": "Optimum3",
+      "name":"Image 3",
+      "Logo": "img/DSlogo.SVG"
+    }, 
+  
+    {
+      "Client": "Optimum5",
+      "name":"Image 4",
+      "Logo": "img/DSlogo.SVG"
+    }]
+  ;
+  
+
