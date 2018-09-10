@@ -149,7 +149,6 @@ article {
   margin: 0.625rem 1%;
   background-color: white;
   padding: 0.625rem 0.9375rem;
-  height: 15rem;
   width: 100%;
   float: left;
   border: thin solid #212129;
@@ -351,24 +350,21 @@ a article:hover {
 }
 
 .fullWidthWrap {
-  padding: 0;
   margin-left: 10px;
   margin-right: 10px;
   background-color: white;
-  padding: 0.625rem 0.9375rem;
-  height: 23.75rem;
+  padding: 0.625rem 0.9375rem 1.625rem 0.9375rem;
   width: 97%;
   float: left;
   border: thin solid #9d833e;
 }
 
 .halfWidthWrap {
-  padding: 0;
   margin-left: 10px;
   margin-right: 20px;
   background-color: white;
-  padding: 0.625rem 0.9375rem;
-  height: 23.75rem;
+  padding: 0.625rem 0.9375rem 0.8rem 0.9375rem;
+  min-height: 23rem;
   width: 48%;
   float: left;
   border: thin solid #9d833e;
@@ -515,6 +511,15 @@ a article:hover {
   padding: 20px;
 }
 
+.itemgGroup .wrapperTable {
+  width: 100%;
+  padding: 20px;
+}
+
+.itemgGroup .wrapperTable .useDescription {
+  margin-left: 2.5rem;
+}
+
 .itemgGroup .bgbox {
   margin: 2.5rem;
   padding: 2.5rem;
@@ -637,6 +642,10 @@ a article:hover {
   }
   .landingPageWrap article {
     width: 48%;
+    min-height: 12rem;
+  }
+  .landingPageWrap article p {
+    text-align: center;
   }
   .nav {
     display: none;

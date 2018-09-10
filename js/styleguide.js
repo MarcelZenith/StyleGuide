@@ -157,3 +157,23 @@
   output+='<div class ="wrapper"><div class="colorSample" style="background-color:'+buttonText[i].colorSampleBox+'"></div><span class="SampleBox">' + buttonText[i].name +"  "+ '</span>' +'<div class="useDescription">'+ "Color code: " +buttonText[i].colorCode+'</div>'+'</div>';
    }
   document.getElementById("buttonText").innerHTML=output;
+
+
+
+ var TablesText = [
+    {
+      "Client": "Artis",
+      "name":"Default table background: white"
+    },
+	{
+      "Client": "Artis",
+      "name":"Default table header row should have a white background with a left border (not a right border,) border color: rgba(33, 33, 41, 1)"
+    },
+	]
+  ;
+  
+   var output ='';
+   for (var i=0;i<TablesText.length;i++){
+  output+='<div class ="wrapperTable"><span class="SampleBox">' + TablesText[i].name +"  "+ '</span>' +'<div class="useDescription">'+ "Color code: " +TablesText[i].colorCode+'</div>'+'</div>';
+   }
+  document.getElementById("TablesText").innerHTML=output;

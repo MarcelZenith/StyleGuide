@@ -176,7 +176,6 @@ article {
 	margin: 0.625rem 1%;
 	background-color: $white;
 	padding: 0.625rem 0.9375rem;
-	height: 15rem;
 	width: 100%;
 	float: left;
 	border: thin solid rgba(33, 33, 41, 1);
@@ -366,24 +365,20 @@ a article{
 }
 
 .fullWidthWrap {
-    padding: 0;
-	
 	margin-left: 10px;
 	margin-right: 10px;
     background-color: white;
-    padding: 0.625rem 0.9375rem;
-    height: 23.75rem;
+    padding: 0.625rem 0.9375rem 1.625rem 0.9375rem;
     width: 97%;
     float: left;
     border: thin solid  $primaryGold;
 }
 .halfWidthWrap {
-    padding: 0;
 	margin-left: 10px;
 	margin-right: 20px;
     background-color: white;
-    padding: 0.625rem 0.9375rem;
-    height: 23.75rem;
+	padding: 0.625rem 0.9375rem 0.8rem 0.9375rem;
+    min-height: 23rem;
     width: 48%;
     float: left;
     border: thin solid $primaryGold;
@@ -546,6 +541,14 @@ height: 50%;
 	float: left;
 	padding: 20px;	
 }
+.wrapperTable{
+	width:100%;
+	padding: 20px;	
+
+	.useDescription{
+		margin-left: 2.5rem;
+	}
+}
 .bgbox{
 	margin: 2.5rem;
 	padding: 2.5rem;
@@ -682,8 +685,14 @@ height: 50%;
 
 	.landingPageWrap article{
 		width: 48%;
+		min-height: 12rem;
+
+		p{
+			text-align: center;
+		}
 	}
 
+	 
 	
 	.nav {
 		display: none;
