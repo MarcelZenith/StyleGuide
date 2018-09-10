@@ -41,24 +41,23 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: #f0f0f0;
   font-family: Open Sans, Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
   height: 100%;
+  color: #979797;
 }
 
 main {
   padding: 0;
   margin: 0;
-  margin-top: 3.125rem;
   width: 100%;
   display: inline-block;
 }
 
 h1 {
   text-align: center;
-  color: red;
-  margin-bottom: 30px;
-  font-family: interstateregular;
+  color: #212129;
+  font-family: Open Sans, Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 2rem;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -66,6 +65,10 @@ h1 {
 
 h2 {
   padding: 1rem;
+}
+
+h3 {
+  color: #212129;
 }
 
 .Headerfile1 {
@@ -104,7 +107,7 @@ form .login-Btn {
 }
 
 .rectangle {
-  color: red;
+  color: #212129;
   margin-bottom: 0.625rem;
   padding: 0.125rem 0.625rem 0.625rem;
   visibility: hidden;
@@ -149,8 +152,8 @@ article {
   height: 15rem;
   width: 100%;
   float: left;
-  border: thin solid green;
-  border-top: medium solid green;
+  border: thin solid #212129;
+  border-top: medium solid #212129;
 }
 
 img {
@@ -163,6 +166,7 @@ img {
   display: block;
   margin-bottom: 0.3125rem;
   padding: 0.625rem 0;
+  display: none;
 }
 
 .dot {
@@ -243,7 +247,7 @@ i {
 }
 
 #styles {
-  background-color: #f0f0f0;
+  background-color: #f6f4ee;
   color: black;
   padding: 1.875rem;
   font-size: 1rem;
@@ -253,7 +257,7 @@ i {
 }
 
 .dropbtn {
-  background-color: #f0f0f0;
+  background-color: #f6f4ee;
   color: black;
   padding: 1.875rem;
   font-size: 1rem;
@@ -355,8 +359,7 @@ a article:hover {
   height: 23.75rem;
   width: 97%;
   float: left;
-  border: thin solid green;
-  border-top: medium solid green;
+  border: thin solid #9d833e;
 }
 
 .halfWidthWrap {
@@ -368,8 +371,7 @@ a article:hover {
   height: 23.75rem;
   width: 48%;
   float: left;
-  border: thin solid green;
-  border-top: medium solid green;
+  border: thin solid #9d833e;
 }
 
 #fonts {
@@ -451,6 +453,17 @@ a article:hover {
   vertical-align: bottom;
   float: left;
   padding: 5px;
+  border: thin solid #212129;
+}
+
+.itemgGroup .useDescription {
+  margin-left: 4.4rem;
+  color: #979797;
+}
+
+.itemgGroup .useDescriptionFont {
+  margin-left: 1.5rem;
+  color: #979797;
 }
 
 .itemgGroup #titletext {
@@ -470,12 +483,11 @@ a article:hover {
 }
 
 .itemgGroup .fontext {
-  width: 1.875rem;
-  height: 1.875rem;
   border-radius: 16px;
   vertical-align: bottom;
   float: left;
   padding: 5px;
+  color: #212129;
 }
 
 .itemgGroup .logbox {
@@ -493,7 +505,8 @@ a article:hover {
 }
 
 .itemgGroup .SampleBox {
-  margin: 2.5rem;
+  margin: 0 0 0 2.5rem;
+  color: #212129;
 }
 
 .itemgGroup .wrapper {
@@ -524,9 +537,10 @@ a article:hover {
 .bgcolor {
   width: 1.875rem;
   height: 1.875rem;
-  /*	background-color:gray;*/
   display: inline-block;
   vertical-align: bottom;
+  border: thin solid #212129;
+  color: #979797;
 }
 
 .title {
@@ -536,18 +550,6 @@ a article:hover {
 
 .description {
   display: inline-block;
-}
-
-#color1 .colorSample {
-  background: red;
-}
-
-#color2 .colorSample {
-  background: green;
-}
-
-#color3 .colorSample {
-  background: blue;
 }
 
 .itemgGroup2 {
@@ -574,18 +576,6 @@ a article:hover {
 
 .itemgGroup2 .description {
   display: inline-block;
-}
-
-.itemgGroup2 #color1 .colorSample {
-  background: red;
-}
-
-.itemgGroup2 #color2 .colorSample {
-  background: green;
-}
-
-.itemgGroup2 #color3 .colorSample {
-  background: blue;
 }
 
 .LogoIcon {

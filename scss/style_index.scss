@@ -1,12 +1,14 @@
 @charset "UTF-8";
 //colors
 $white: white;
-$red: red;
+$headlineText: rgba(33, 33, 41, 1);
+$primaryTextCol:rgba(151, 151, 151, 1);
+$primaryGold: rgba(157, 131, 62, 1);
 $silver:  silver;
 $black: black;
 $color_pink_swan_approx: #bbb;
-$color_gallery_approx: #f0f0f0;
-$color_japanese_laurel_approx: green;
+$color_gallery_approx: rgba(246, 244, 238, 1);
+$color_japanese_laurel_approx: rgba(33, 33, 41, 1);
 $seashell: #f1f1f1;
 $black_20: rgba(0,0,0,0.2);
 $color_alto_approx: #ddd;
@@ -68,28 +70,31 @@ body {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	background-color: $color_gallery_approx;
+	// background-color: $color_gallery_approx;
 	font-family:$font_2;
 	height: 100%;
+	color:$primaryTextCol;
 }
 main {
 	padding: 0;
     margin: 0;
-	margin-top: 3.125rem;
     width: 100%;
 	display: inline-block;
 }
 h1 {
 	text-align: center;
-	color: $red;
-	margin-bottom: 30px;
-	font-family: $font_1;
+	color: $headlineText;
+	font-family: $font_2;
+	font-size: 2rem;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 10px;
 }
 h2 {
 	padding: 1rem;
+}
+h3{
+	color:$headlineText;
 }
 .Headerfile1{
 	text-align: left;
@@ -127,7 +132,7 @@ form {
 }
 
 .rectangle {
-	color: $red;
+	color: $headlineText;
 	margin-bottom: 0.625rem;
 	padding: 0.125rem 0.625rem 0.625rem;
 	visibility: hidden;
@@ -174,8 +179,8 @@ article {
 	height: 15rem;
 	width: 100%;
 	float: left;
-	border: thin solid green;
-	border-top: medium solid green;
+	border: thin solid rgba(33, 33, 41, 1);
+	border-top: medium solid rgba(33, 33, 41, 1);
 }
  
 img {
@@ -189,6 +194,7 @@ img {
 	display: block;
 	margin-bottom: 0.3125rem;
 	padding: 0.625rem 0;
+	display:none;
 }
 
 .dot {
@@ -369,8 +375,7 @@ a article{
     height: 23.75rem;
     width: 97%;
     float: left;
-    border: thin solid green;
-    border-top: medium solid green;
+    border: thin solid  $primaryGold;
 }
 .halfWidthWrap {
     padding: 0;
@@ -381,8 +386,7 @@ a article{
     height: 23.75rem;
     width: 48%;
     float: left;
-    border: thin solid green;
-    border-top: medium solid green;
+    border: thin solid $primaryGold;
 }
 
 #fonts{
@@ -482,9 +486,17 @@ z-index:1;
 		vertical-align: bottom;
 		float: left;
 		padding: 5px;	
+		border:thin solid rgba(33, 33, 41, 1);
 	}
 
-	
+	.useDescription{
+		margin-left: 4.4rem;
+		color:rgba(151, 151, 151, 1);
+	}
+	.useDescriptionFont{
+		margin-left: 1.5rem;
+		color:rgba(151, 151, 151, 1);
+	}
 
 #titletext{
 width:100%;
@@ -505,12 +517,11 @@ height: 50%;
 
 
 .fontext{
-	width: 1.875rem;
-	height: 1.875rem;
 	border-radius: 16px;
 	vertical-align: bottom;
 	float: left;
 	padding: 5px;	
+	color:rgba(33, 33, 41, 1);
 }
 
 .logbox{
@@ -527,8 +538,8 @@ height: 50%;
     	
 }
 .SampleBox{
-	margin: 2.5rem;
-
+	margin: 0 0 0 2.5rem;
+	color:rgba(33, 33, 41, 1);
 }
 .wrapper{
 	width:50%;
@@ -560,11 +571,10 @@ height: 50%;
 .bgcolor{
 	width: 1.875rem;
 	height: 1.875rem;
-/*	background-color:gray;*/
 	display: inline-block;
-//	border-radius: 16px;
 	vertical-align: bottom;
-
+	border:thin solid rgba(33, 33, 41, 1);
+	color: $primaryTextCol;
 }
 
 
@@ -578,16 +588,6 @@ height: 50%;
 		display: inline-block;
 		
 	}
-	#color1 .colorSample{
-		background:red;
-	}
-	#color2 .colorSample{
-		background: green;
-	}
-	#color3 .colorSample{
-		background:blue;
-	}
-
 
 .itemgGroup2{
 	width:50%;
@@ -612,15 +612,6 @@ height: 50%;
 	.description{
 		display: inline-block;
 		
-	}
-	#color1 .colorSample{
-		background:red;
-	}
-	#color2 .colorSample{
-		background: green;
-	}
-	#color3 .colorSample{
-		background:blue;
 	}
 }
  .LogoIcon{

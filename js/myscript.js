@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#Optimum1").click(function(){
-        $("#text1").text("Optimum1");
+        $("#text1").text("Artis");
     });
 });
 

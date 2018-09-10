@@ -1,98 +1,61 @@
     var titletext = [
-  {
-      "Client": "Optimum1",
-      "name":"Black",
-      "colorSampleBox": "Black",
-      "Font": "sans-serif",
-      "Background": "white",
-      "Logo": "img/DSlogo.SVG"
-     
-    },
-    
-     {
-      "Client": "Optimum2",
-      "name":"silver",
-      "colorSampleBox": "silver",
-      "Font": "interstatebold",
-      "Background": "green",
-      "Logo": "img/DSlogo.SVG"
-    }, 
-  
     {
-      "Client": "Optimum3",
-      "name":"red",
-      "colorSampleBox": "red",
-      "Font": "interstateregular",
-      "Background": "grey",
-      "Logo": "img/DSlogo.SVG"
-    }, 
-  
-    {
-      "Client": "Optimum4",
-      "name":"green",
-      "colorSampleBox": "green",
-      "Font": "Open Sans",
-      "Background": "orange",
-      "Logo": "img/DSlogo.SVG"
+      "Client": "Artis",
+      "name":"H1, H2, H3 text color",
+      "colorSampleBox": "rgba(33, 33, 41, 1)",
+	  "colorCode":"rgba(33, 33, 41, 1)"
     },
     {
-      "Client": "Optimum5",
-      "name":"yellow",
-      "colorSampleBox": "yellow",
-      "Font": "interstateregular",
-      "Background": "grey",
-      "Logo": "img/DSlogo.SVG"
-    }]
+      "Client": "Artis",
+      "name":"Default text color for body and paragraph tag",
+	  "colorSampleBox": "rgba(151, 151, 151, 1)",
+	  "colorCode":"rgba(151, 151, 151, 1)"
+    }, 
+    {
+      "Client": "Artis",
+      "name":"Text color hightlighted text",
+      "colorSampleBox": "rgba(157, 131, 62, 1)",
+	  "colorCode":"rgba(157, 131, 62, 1)"
+    },
+	{
+      "Client": "Artis",
+      "name":"Text color hightlighted text",
+      "colorSampleBox": "rgba(217, 61, 122, 1)",
+	  "colorCode":"rgba(217, 61, 122, 1)"
+    },
+	{
+      "Client": "Artis",
+      "name":"Text color on header-background",
+      "colorSampleBox": "rgba(255, 255, 255, 1)",
+	  "colorCode":"rgba(255, 255, 255, 1)"
+    },	
+	]
   ;
   
    var output ='';
    for (var i=0;i<titletext.length;i++){
-  output+='<div class ="wrapper"><div class="colorSample" style="background-color:'+titletext[i].colorSampleBox+'"></div><span class="SampleBox">' + titletext[i].name +"  "+'</span></div>';
+  output+='<div class ="wrapper"><div class="colorSample" style="background-color:'+titletext[i].colorSampleBox+'"></div><span class="SampleBox">' + titletext[i].name +"  "+ '</span>' +'<div class="useDescription">'+ "Color code: " +titletext[i].colorCode+'</div>'+'</div>';
    }
   document.getElementById("titletext").innerHTML=output;
 
 
 // Fonts box Jquery
-
   var fontbox = [
   {
-      "Client": "Optimum1",
-     
-      "Font": "sans-serif",
-     
-     
-    },
-    
-     {
-      "Client": "Optimum2",
-      
-      "Font": "interstatebold"
-     
-    }, 
-  
-    {
-      "Client": "Optimum3",
-     
-      "Font": "interstateregular"
-      
-    }, 
-  
-    {
-      "Client": "Optimum4",
-      
-      "Font": "Open Sans"
-      
+      "Client": "Artis",
+      "Font": "Gotham Narrow, Open Sans, Sans Serif",
+	  "useage":"Font-stack for body tag"
     },
     {
-        "Client": "Optimum5",
-      "Font": "interstateregular"
-      
+      "Client": "Artis",
+      "Font": "ITC New Baskerville",
+	  "useage":"H1, H2 tags"
     }]
   ;
   
    var output ='';
    for (var i=0;i<fontbox.length;i++){
-  output+='<div class ="wrapper"><div class="fontext"><li>' +fontbox[i].Font +"  "+'</li></div></div>';
+  output+='<div class ="wrapper"><div class="fontext"><li>' +fontbox[i].Font + '<div class="useDescriptionFont">' + "Usage: " +fontbox[i].useage +"  "+ '</div>'+'</li></div></div>';
    }
   document.getElementById("fontbox").innerHTML=output;
 
@@ -101,10 +64,8 @@
  var NavText = [
   {
       "Client": "Optimum1",
-     
       "Text": "This is a paragraph. It's a very simple structure that you will use time and again in your web pages"
-     
-     
+
     }]
   ;
   
@@ -118,64 +79,29 @@
   
   var backgroundbox = [
   {
-      "Client": "Optimum1",
-      "name":"Black",
-      "colorSampleBox": "Black",
-      "Font": "sans-serif",
-      "Background": "white",
-      "Logo": "img/DSlogo.SVG"
-     
+      "Client": "Artis",
+      "name":"Site background",
+      "colorSampleBox": "rgba(246, 244, 238, 1)",
+	  "colorCode":"rgba(246, 244, 238, 1)"
     },
     
      {
-      "Client": "Optimum2",
-      "name":"silver",
-      "colorSampleBox": "silver",
-      "Font": "interstatebold",
-      "Background": "green",
-      "Logo": "img/DSlogo.SVG"
+      "Client": "Artis",
+      "name":"Header background",
+      "colorSampleBox": "rgba(33, 33, 41, 1)",
+	  "colorCode":"rgba(33, 33, 41, 1)"
     }, 
-  
     {
-      "Client": "Optimum3",
-      "name":"yellow",
-      "colorSampleBox": "yellow",
-      "Font": "interstateregular",
-      "Background": "grey",
-      "Logo": "img/DSlogo.SVG"
-    },
-    {
-      "Client": "Optimum4",
-      "name":"red",
-      "colorSampleBox": "red",
-      "Font": "sans-serif",
-      "Background": "white",
-      "Logo": "img/DSlogo.SVG"
-     
-    },
-    {
-      "Client": "Optimum4",
-      "name":"green",
-      "colorSampleBox": "green",
-      "Font": "sans-serif",
-      "Background": "white",
-      "Logo": "img/DSlogo.SVG"
-     
-    },
-    {
-      "Client": "Optimum4",
-      "name":"gray",
-      "colorSampleBox": "gray",
-      "Font": "sans-serif",
-      "Background": "white",
-      "Logo": "img/DSlogo.SVG"
-     
+      "Client": "Artis",
+      "name":"Default lock background / content blocks",
+      "colorSampleBox": "rgba(255, 255, 255, 1)",
+	  "colorCode":"rgba(255, 255, 255, 1)"
     }]
   ;
   
    var output ='';
    for (var i=0;i<backgroundbox.length;i++){
-  output+='<div class="wrapper"><div class="bgcolor" style="background-color:'+backgroundbox[i].colorSampleBox+'"></div><span class="SampleBox">'+"    " + backgroundbox[i].name +"  "+'</span></div>';
+  output+='<div class="wrapper"><div class="bgcolor" style="background-color:'+backgroundbox[i].colorSampleBox+'"></div><span class="SampleBox">'+"    " + backgroundbox[i].name +"  "+ '<div class="useDescription">'+ "Color code: " +backgroundbox[i].colorCode+ '</div>' + '</span></div>';
    }
   document.getElementById("backgroundbox").innerHTML=output;
 
@@ -212,3 +138,22 @@
   output+='<div class ="wrapper"><div class="LogoSample"><img src="'+logbox[i].Logo +'" alt="my image" height= "30" width= "235"><span>' + logbox[i].name +"  "+'</span></div></div>';
    }
   document.getElementById("logbox").innerHTML=output;
+
+
+
+
+    var buttonText = [
+    {
+      "Client": "Artis",
+      "name":"Primary actions such as Save and Add",
+      "colorSampleBox": "rgba(157, 131, 62, 1)",
+	  "colorCode":"Color code: rgba(157, 131, 62, 1)"
+    },
+	]
+  ;
+  
+   var output ='';
+   for (var i=0;i<buttonText.length;i++){
+  output+='<div class ="wrapper"><div class="colorSample" style="background-color:'+buttonText[i].colorSampleBox+'"></div><span class="SampleBox">' + buttonText[i].name +"  "+ '</span>' +'<div class="useDescription">'+ "Color code: " +buttonText[i].colorCode+'</div>'+'</div>';
+   }
+  document.getElementById("buttonText").innerHTML=output;
