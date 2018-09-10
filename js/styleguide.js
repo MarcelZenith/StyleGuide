@@ -147,7 +147,25 @@
       "Client": "Artis",
       "name":"Primary actions such as Save and Add",
       "colorSampleBox": "rgba(157, 131, 62, 1)",
-	  "colorCode":"Color code: rgba(157, 131, 62, 1)"
+	    "colorCode":"Color code: rgba(157, 131, 62, 1)"
+    },
+    {
+      "Client": "Artis",
+      "name":"Export and Download buttons",
+      "colorSampleBox": "rgba(0, 176, 163, 1)",
+	    "colorCode":"Color code: rgba(0, 176, 163, 1)"
+    },
+    {
+      "Client": "Artis",
+      "name":"Adjuested view button",
+      "colorSampleBox": "rgba(22, 171, 224, 1)",
+	    "colorCode":"Color code: rgba(0, 176, 163, 1)"
+    },
+    {
+      "Client": "Artis",
+      "name":"File button",
+      "colorSampleBox": "rgba(217, 61, 122, 1)",
+	    "colorCode":"Color code: rgba(217, 61, 122, 1)"
     },
 	]
   ;
