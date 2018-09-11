@@ -64,7 +64,7 @@
  var NavText = [
   {
       "Client": "Optimum1",
-      "Text": "This is a paragraph. It's a very simple structure that you will use time and again in your web pages"
+      "Text": "Artis menu's and navigation: https://xd.adobe.com/view/960b2734-7da0-4bbb-7d81-f541ffd6e97b-e03a/"
 
     }]
   ;
